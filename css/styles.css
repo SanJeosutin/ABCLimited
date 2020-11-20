@@ -1,0 +1,269 @@
+/*********************************************
+ *? NAME        : SanJeosutin
+ *? TITLE       : style.php
+ *? DESCRIPTION : main style 
+ *? CREATED ON  : 06-11-2019
+ *********************************************/
+
+@font-face{
+    font-family: AstuteRegular;
+    src: url(../fonts/AstuteRegular.ttf);
+}
+
+@font-face{
+    font-family: Barcode;
+    src: url(../fonts/barcodeFont.ttf);
+}
+
+@font-face{
+    font-family: LivvicBold;
+    src: url(../fonts/Livvic-Bold.ttf);
+}
+
+@font-face{
+    font-family: LivvicItalic;
+    src: url(../fonts/Livvic-Italic.ttf);
+}
+
+@font-face{
+    font-family: LivvicRegular;
+    src: url(../fonts/Livvic-Regular.ttf);
+}
+
+:root{
+    --FontSize: 24px;
+    --Font_Heading: AstuteRegular; 
+    --Font_Paragraph: LivvicRegular; 
+    --BorderLeft: 5px solid #00ff7f; 
+    --LetterSpace: 6px;
+    --BackgroundColour: #d7ee0c;
+    --BorderBottom: 2px solid #0ceeb5;
+    --FontInputSize: 16px;
+}
+
+html{
+    height: 100%;
+    background-image: linear-gradient(to bottom right, #00008b , #02ff80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.Title{
+    font-family: var(--Font_Heading);
+    font-size: 56px;
+    letter-spacing: 6px;
+
+    margin: 5px 7% 2px 7%;
+    cursor: default;
+}
+
+.LoginStyle{
+    background-color: var(--BackgroundColour);
+    border-radius: 10px 10px 10px 10px;
+
+    position: relative;
+    margin: 84px 10% 4% 10%;
+    padding: 15px 15px 15px 15px;
+    text-align: center;
+}
+
+.Username{
+    font-family: var(--Font_Heading);
+    font-size: var(--FontSize);
+    letter-spacing: var(--LetterSpace);
+}
+
+input[type=text]{
+    border: none;
+    background-color: var(--BackgroundColour);
+    border-bottom: var(--BorderBottom);
+    font-size: var(--FontInputSize);
+}
+
+input[type=text]:focus{
+    border: none;
+    background-color: var(--BackgroundColour);
+    border-bottom: 4px solid #ee2e0c;
+    font-size: var(--FontInputSize);
+}
+
+.Password{
+    font-family: var(--Font_Heading);
+    font-size: var(--FontSize);
+    letter-spacing: var(--LetterSpace);
+}
+
+input[type=password]{
+    border: none;
+    background-color: var(--BackgroundColour);
+    border-bottom: var(--BorderBottom);
+    font-size: var(--FontInputSize);
+}
+
+input[type=password]:focus{
+    border: none;
+    background-color: var(--BackgroundColour);
+    border-bottom: 4px solid #ee2e0c;
+    font-size: var(--FontInputSize);
+}
+
+input[type=email]{
+    border: none;
+    background-color: var(--BackgroundColour);
+    border-bottom: var(--BorderBottom);
+    font-size: var(--FontInputSize);
+}
+
+input[type=email]:focus{
+    border: none;
+    background-color: var(--BackgroundColour);
+    border-bottom: 4px solid #ee2e0c;
+    font-size: var(--FontInputSize);
+}
+
+input[type=date]{
+    border: none;
+    background-color: var(--BackgroundColour);
+    border-bottom: var(--BorderBottom);
+    font-size: var(--FontInputSize);
+}
+
+input[type=date]:focus{
+    border: none;
+    background-color: var(--BackgroundColour);
+    border-bottom: 4px solid #ee2e0c;
+    font-size: var(--FontInputSize);
+}
+
+input[type=number]{
+    border: none;
+    background-color: var(--BackgroundColour);
+    border-bottom: var(--BorderBottom);
+    font-size: var(--FontInputSize);
+}
+
+input[type=number]:focus{
+    border: none;
+    background-color: var(--BackgroundColour);
+    border-bottom: 4px solid #ee2e0c;
+    font-size: var(--FontInputSize);
+}
+
+select{
+    border: none;
+    background-color: var(--BackgroundColour);
+    border-bottom: var(--BorderBottom);
+    font-size: var(--FontInputSize);
+}
+
+.Button{
+    text-align: center;
+    font-family: var(--Font_Paragraph);
+    font-size: 14px;
+    letter-spacing: 6px;
+    font-weight: bold;
+
+    border: 2px solid #0ceeb5;
+    background-color: #0ceeb5;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.Version{
+    font-size: 12px;
+    font-weight: 600;
+    cursor: default;
+}
+
+footer{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: var(--Font_Paragraph);
+    cursor: default;
+}
+
+p{
+    font-family: var(--Font_Paragraph);
+}
+
+.subHead{
+    font-family: var(--Font_Paragraph);
+    font-size: 18px;
+}
+
+.Important{
+    color: #ee2e0c;
+    font-weight: bolder;
+}
+
+.userInfo{
+    background-color: var(--BackgroundColour);
+    font-family: var(--Font_Paragraph);
+
+    margin-top: 10px;
+    margin-left: 84%;
+
+    position: fixed;
+    padding: 16px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+/*DROP DOWN STYLES*/
+.drpdwnBar {
+    font-family: var(--Font_Paragraph);
+    background-color: var(--BackgroundColour);
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+  
+.drpdwnMenu {
+  position: relative;
+  display: inline-block;
+}
+
+.drpdwnContent {
+  display: none;
+  position: absolute;
+  background-color: var(--BackgroundColour);
+  min-width: 160px;
+  z-index: 1;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.drpdwnContent a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.drpdwnContent a:hover {
+    background-color: #0ceeb5;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+
+    font-weight: bold;
+}
+.drpdwnMenu:hover .drpdwnContent {display: block; }
+.drpdwnMenu:hover .drpdwnBar {background-color: #a0b106;}
+
+
+.Table, td, th{
+    border: 1px solid #000000;
+    text-align: left;
+
+    margin-left:auto; 
+    margin-right:auto;
+}
+/*
+.somethingthatisnotimportant{
+    font-family: Barcode;
+    cursor: default;
+}
+*/
