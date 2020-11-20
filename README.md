@@ -1,6 +1,6 @@
 # ABCLimited Web App
 ### **2019 TAFE Project**
-Small web application for ABC Limited (*Not a real company*)
+Small web application for ABC Limited (*Not a real company*) using PHP(*PDO*) & SQL
 
 #### Features
 * "*secure*" Login
