@@ -8,10 +8,10 @@
 // attempt to connect to mariaDB on the Mercury server
 try {
 	// store user login info into variables
-	$user="root";
-	$passWord="";
+	$user="sanjqgbl_try";
+	$passWord="yrBuCvBR5HwFPcs";
 	$host="localhost";
-	$dbName="ABCLimited_db";
+	$dbName="sanjqgbl_projects";
 
 	// create an object from the PDO Data Object (pdo) class to establish connection
 	$pdo=new PDO("mysql:host=$host;dbname=$dbName", $user, $passWord);
